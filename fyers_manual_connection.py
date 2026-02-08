@@ -16,7 +16,7 @@ appSession = fyersModel.SessionModel(client_id = client_id, redirect_uri = redir
 ### Make  a request to generate_authcode object this will return a login url which you need to open in your browser from where you can get the generated auth_code 
 generateTokenUrl = appSession.generate_authcode()
 
-print((generateTokenUrl))  
+print((generateTokenUrl))
 webbrowser.open(generateTokenUrl,new=1)
 
 ### After succesfull login the user can copy the generated auth_code over here and make the request to generate the accessToken 

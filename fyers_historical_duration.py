@@ -41,7 +41,7 @@ def fetchOHLC2(ticker,interval,duration):
     #return (df)
     return df[['Timestamp2', 'Open', 'High', 'Low', 'Close', 'Volume']]
 
-response_df = fetchOHLC2("MCX:CRUDEOIL25OCTFUT","30",2)
+response_df = fetchOHLC2("NSE:NIFTY50-INDEX","5S",1)
 print(response_df)
 
 response_df.to_csv('nifty50_5min.csv',index=False)

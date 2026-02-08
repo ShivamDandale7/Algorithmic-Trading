@@ -17,6 +17,7 @@ def fetchOHLC_full(ticker,interval,inception_date):
 
     from_date = dt.datetime.strptime(inception_date, '%Y-%m-%d')
     to_date = dt.date.today()
+    print(from_date, to_date)
 
     # Create a DataFrame
     columns = ['Timestamp','Open','High','Low','Close','Volume']

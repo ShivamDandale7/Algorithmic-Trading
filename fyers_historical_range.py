@@ -52,13 +52,10 @@ def fetchOHLC(ticker,interval,range_from, range_to):
     return (df)
 
 # Fetch OHLC data using the function
-response_df = fetchOHLC("NSE:NIFTY50-INDEX","10","2025-05-11", "2025-05-15")
+response_df = fetchOHLC("NSE:NIFTY50-INDEX","1D","2025-05-11", "2025-05-15")
 
 # Print the DataFrame
 print(response_df)
 
 # Save data to a CSV file
 response_df.to_csv('output.csv', index=False)
-
-
-
